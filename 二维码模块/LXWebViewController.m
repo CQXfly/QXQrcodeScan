@@ -13,8 +13,7 @@
 
 @interface LXWebViewController () <UIWebViewDelegate>
 
-@property (nonatomic,strong)  UIActivityIndicatorView *juhua;
-
+@property (nonatomic,strong)  UIWebView *webView;
 @end
 
 @implementation LXWebViewController
@@ -39,21 +38,21 @@
 {
     [super viewWillAppear:animated];
     
-    CGFloat juhuaX = 15;
-    CGFloat juhuaY = self.view.frame.size.width / 2;
-    UIActivityIndicatorView * juhua = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(juhuaX, juhuaY, 30, 30)];
-    [self.view addSubview:juhua];
-    [juhua startAnimating];
-    [self.juhua hidesWhenStopped];
-    
-    self.juhua = juhua;
-    UIWebView *webView = (UIWebView *) self.view;
-    
+   __weak UIWebView *webView = (UIWebView *) self.view;
+    self.webView = webView;
     NSURL *url = [NSURL URLWithString:self.urlStr];
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
     [webView  loadRequest:urlRequest];
     
     webView.delegate = self;
+    
+    __weak UIScrollView *scrollView = webView.scrollView;
+    scrollView.header = [MJRefreshHeader headerWithRefreshingBlock:^{
+       
+        [webView reload];
+    }];
+    
+    [scrollView.header beginRefreshing];
     
 //    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(dismissWebView)];
     
@@ -68,7 +67,7 @@
 
 - (void) webViewDidFinishLoad:(UIWebView *)webView
 {
-    [self.juhua stopAnimating];
+   [self.webView.scrollView.header endRefreshing];
     
 }
 
