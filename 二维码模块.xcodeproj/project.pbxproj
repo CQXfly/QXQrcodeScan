@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2855E2C1B5786EE007AAF35 /* LXWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2855E2B1B5786EE007AAF35 /* LXWebViewController.m */; };
+		C2D75A151B55E9A10013973D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D75A141B55E9A10013973D /* main.m */; };
+		C2D75A181B55E9A10013973D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D75A171B55E9A10013973D /* AppDelegate.m */; };
+		C2D75A1E1B55E9A10013973D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2D75A1C1B55E9A10013973D /* Main.storyboard */; };
+		C2D75A201B55E9A10013973D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2D75A1F1B55E9A10013973D /* Images.xcassets */; };
+		C2D75A231B55E9A10013973D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2D75A211B55E9A10013973D /* LaunchScreen.xib */; };
+		C2D75A2F1B55E9A10013973D /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D75A2E1B55E9A10013973D /* _____Tests.m */; };
+		C2D75A391B55E9C00013973D /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D75A381B55E9C00013973D /* libiconv.dylib */; };
+		C2D75A3B1B55E9C90013973D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D75A3A1B55E9C90013973D /* CoreMedia.framework */; };
+		C2D75A3D1B55E9D30013973D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D75A3C1B55E9D30013973D /* AVFoundation.framework */; };
+		C2D75A551B55E9E50013973D /* zbarSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D75A521B55E9E50013973D /* zbarSDK.a */; };
+		C2D75A5C1B55EAA10013973D /* LXQrcodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D75A5B1B55EAA10013973D /* LXQrcodeScanViewController.m */; };
+		C2D75A5F1B55EAC70013973D /* LXQrcodeScanShowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D75A5E1B55EAC70013973D /* LXQrcodeScanShowController.m */; };
+		C2DAE9A71B5910B10093F566 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAE97D1B5910B00093F566 /* MJRefreshAutoFooter.m */; };
+		C2DAE9A81B5910B10093F566 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAE97F1B5910B00093F566 /* MJRefreshBackFooter.m */; };
+		C2DAE9A91B5910B10093F566 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAE9811B5910B00093F566 /* MJRefreshComponent.m */; };
+		C2DAE9AA1B5910B10093F566 /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAE9831B5910B00093F566 /* MJRefreshFooter.m */; };
+		C2DAE9AB1B5910B10093F566 /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAE9851B5910B00093F566 /* MJRefreshHeader.m */; };
+		C2DAE9AC1B5910B10093F566 /* MJRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAE98A1B5910B00093F566 /* MJRefreshAutoGifFooter.m */; };
+		C2DAE9AD1B5910B10093F566 /* MJRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAE98C1B5910B00093F566 /* MJRefreshAutoNormalFooter.m */; };
+		C2DAE9AE1B5910B10093F566 /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAE98E1B5910B10093F566 /* MJRefreshAutoStateFooter.m */; };
+		C2DAE9AF1B5910B10093F566 /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAE9911B5910B10093F566 /* MJRefreshBackGifFooter.m */; };
+		C2DAE9B01B5910B10093F566 /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAE9931B5910B10093F566 /* MJRefreshBackNormalFooter.m */; };
+		C2DAE9B11B5910B10093F566 /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAE9951B5910B10093F566 /* MJRefreshBackStateFooter.m */; };
+		C2DAE9B21B5910B10093F566 /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAE9981B5910B10093F566 /* MJRefreshGifHeader.m */; };
+		C2DAE9B31B5910B10093F566 /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAE99A1B5910B10093F566 /* MJRefreshNormalHeader.m */; };
+		C2DAE9B41B5910B10093F566 /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAE99C1B5910B10093F566 /* MJRefreshStateHeader.m */; };
+		C2DAE9B51B5910B10093F566 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C2DAE99D1B5910B10093F566 /* MJRefresh.bundle */; };
+		C2DAE9B61B5910B10093F566 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAE9A01B5910B10093F566 /* MJRefreshConst.m */; };
+		C2DAE9B71B5910B10093F566 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAE9A21B5910B10093F566 /* UIScrollView+MJExtension.m */; };
+		C2DAE9B81B5910B10093F566 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAE9A41B5910B10093F566 /* UIScrollView+MJRefresh.m */; };
+		C2DAE9B91B5910B10093F566 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DAE9A61B5910B10093F566 /* UIView+MJExtension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2D75A291B55E9A10013973D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2D75A071B55E9A00013973D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2D75A0E1B55E9A00013973D;
+			remoteInfo = "二维码模块";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C2855E2A1B5786EE007AAF35 /* LXWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXWebViewController.h; sourceTree = "<group>"; };
+		C2855E2B1B5786EE007AAF35 /* LXWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXWebViewController.m; sourceTree = "<group>"; };
+		C2D75A0F1B55E9A00013973D /* 二维码模块.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "二维码模块.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2D75A131B55E9A10013973D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2D75A141B55E9A10013973D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C2D75A161B55E9A10013973D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C2D75A171B55E9A10013973D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C2D75A1D1B55E9A10013973D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C2D75A1F1B55E9A10013973D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C2D75A221B55E9A10013973D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C2D75A281B55E9A10013973D /* 二维码模块Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "二维码模块Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2D75A2D1B55E9A10013973D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2D75A2E1B55E9A10013973D /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____Tests.m"; sourceTree = "<group>"; };
+		C2D75A381B55E9C00013973D /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		C2D75A3A1B55E9C90013973D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		C2D75A3C1B55E9D30013973D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C2D75A401B55E9E50013973D /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		C2D75A411B55E9E50013973D /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		C2D75A421B55E9E50013973D /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		C2D75A431B55E9E50013973D /* ImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScanner.h; sourceTree = "<group>"; };
+		C2D75A441B55E9E50013973D /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		C2D75A451B55E9E50013973D /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		C2D75A461B55E9E50013973D /* Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		C2D75A471B55E9E50013973D /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		C2D75A481B55E9E50013973D /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		C2D75A491B55E9E50013973D /* zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbar.h; sourceTree = "<group>"; };
+		C2D75A4A1B55E9E50013973D /* ZBarCameraSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCameraSimulator.h; sourceTree = "<group>"; };
+		C2D75A4B1B55E9E50013973D /* ZBarCaptureReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCaptureReader.h; sourceTree = "<group>"; };
+		C2D75A4C1B55E9E50013973D /* ZBarHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarHelpController.h; sourceTree = "<group>"; };
+		C2D75A4D1B55E9E50013973D /* ZBarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImage.h; sourceTree = "<group>"; };
+		C2D75A4E1B55E9E50013973D /* ZBarImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImageScanner.h; sourceTree = "<group>"; };
+		C2D75A4F1B55E9E50013973D /* ZBarReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderController.h; sourceTree = "<group>"; };
+		C2D75A501B55E9E50013973D /* ZBarReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderView.h; sourceTree = "<group>"; };
+		C2D75A511B55E9E50013973D /* ZBarReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderViewController.h; sourceTree = "<group>"; };
+		C2D75A521B55E9E50013973D /* zbarSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = zbarSDK.a; sourceTree = "<group>"; };
+		C2D75A531B55E9E50013973D /* ZBarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSDK.h; sourceTree = "<group>"; };
+		C2D75A541B55E9E50013973D /* ZBarSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSymbol.h; sourceTree = "<group>"; };
+		C2D75A5A1B55EAA10013973D /* LXQrcodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXQrcodeScanViewController.h; sourceTree = "<group>"; };
+		C2D75A5B1B55EAA10013973D /* LXQrcodeScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXQrcodeScanViewController.m; sourceTree = "<group>"; };
+		C2D75A5D1B55EAC70013973D /* LXQrcodeScanShowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXQrcodeScanShowController.h; sourceTree = "<group>"; };
+		C2D75A5E1B55EAC70013973D /* LXQrcodeScanShowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXQrcodeScanShowController.m; sourceTree = "<group>"; };
+		C2DAE97C1B5910B00093F566 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
+		C2DAE97D1B5910B00093F566 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
+		C2DAE97E1B5910B00093F566 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
+		C2DAE97F1B5910B00093F566 /* MJRefreshBackFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackFooter.m; sourceTree = "<group>"; };
+		C2DAE9801B5910B00093F566 /* MJRefreshComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshComponent.h; sourceTree = "<group>"; };
+		C2DAE9811B5910B00093F566 /* MJRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshComponent.m; sourceTree = "<group>"; };
+		C2DAE9821B5910B00093F566 /* MJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooter.h; sourceTree = "<group>"; };
+		C2DAE9831B5910B00093F566 /* MJRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooter.m; sourceTree = "<group>"; };
+		C2DAE9841B5910B00093F566 /* MJRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeader.h; sourceTree = "<group>"; };
+		C2DAE9851B5910B00093F566 /* MJRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeader.m; sourceTree = "<group>"; };
+		C2DAE9891B5910B00093F566 /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
+		C2DAE98A1B5910B00093F566 /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
+		C2DAE98B1B5910B00093F566 /* MJRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
+		C2DAE98C1B5910B00093F566 /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
+		C2DAE98D1B5910B00093F566 /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
+		C2DAE98E1B5910B10093F566 /* MJRefreshAutoStateFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoStateFooter.m; sourceTree = "<group>"; };
+		C2DAE9901B5910B10093F566 /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
+		C2DAE9911B5910B10093F566 /* MJRefreshBackGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackGifFooter.m; sourceTree = "<group>"; };
+		C2DAE9921B5910B10093F566 /* MJRefreshBackNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackNormalFooter.h; sourceTree = "<group>"; };
+		C2DAE9931B5910B10093F566 /* MJRefreshBackNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackNormalFooter.m; sourceTree = "<group>"; };
+		C2DAE9941B5910B10093F566 /* MJRefreshBackStateFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackStateFooter.h; sourceTree = "<group>"; };
+		C2DAE9951B5910B10093F566 /* MJRefreshBackStateFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackStateFooter.m; sourceTree = "<group>"; };
+		C2DAE9971B5910B10093F566 /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshGifHeader.h; sourceTree = "<group>"; };
+		C2DAE9981B5910B10093F566 /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshGifHeader.m; sourceTree = "<group>"; };
+		C2DAE9991B5910B10093F566 /* MJRefreshNormalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshNormalHeader.h; sourceTree = "<group>"; };
+		C2DAE99A1B5910B10093F566 /* MJRefreshNormalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshNormalHeader.m; sourceTree = "<group>"; };
+		C2DAE99B1B5910B10093F566 /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshStateHeader.h; sourceTree = "<group>"; };
+		C2DAE99C1B5910B10093F566 /* MJRefreshStateHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshStateHeader.m; sourceTree = "<group>"; };
+		C2DAE99D1B5910B10093F566 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
+		C2DAE99E1B5910B10093F566 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
+		C2DAE99F1B5910B10093F566 /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
+		C2DAE9A01B5910B10093F566 /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
+		C2DAE9A11B5910B10093F566 /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
+		C2DAE9A21B5910B10093F566 /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
+		C2DAE9A31B5910B10093F566 /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		C2DAE9A41B5910B10093F566 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		C2DAE9A51B5910B10093F566 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
+		C2DAE9A61B5910B10093F566 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2D75A0C1B55E9A00013973D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D75A3D1B55E9D30013973D /* AVFoundation.framework in Frameworks */,
+				C2D75A551B55E9E50013973D /* zbarSDK.a in Frameworks */,
+				C2D75A3B1B55E9C90013973D /* CoreMedia.framework in Frameworks */,
+				C2D75A391B55E9C00013973D /* libiconv.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2D75A251B55E9A10013973D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2D75A061B55E9A00013973D = {
+			isa = PBXGroup;
+			children = (
+				C2D75A561B55E9E90013973D /* Framework */,
+				C2D75A111B55E9A00013973D /* 二维码模块 */,
+				C2D75A2B1B55E9A10013973D /* 二维码模块Tests */,
+				C2D75A101B55E9A00013973D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2D75A101B55E9A00013973D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2D75A0F1B55E9A00013973D /* 二维码模块.app */,
+				C2D75A281B55E9A10013973D /* 二维码模块Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2D75A111B55E9A00013973D /* 二维码模块 */ = {
+			isa = PBXGroup;
+			children = (
+				C2D75A591B55EA560013973D /* LXQrcodeScanView */,
+				C2D75A3E1B55E9E50013973D /* ZBarSDK */,
+				C2D75A1F1B55E9A10013973D /* Images.xcassets */,
+				C2D75A211B55E9A10013973D /* LaunchScreen.xib */,
+				C2D75A581B55EA340013973D /* Other */,
+				C2D75A121B55E9A10013973D /* Supporting Files */,
+			);
+			path = "二维码模块";
+			sourceTree = "<group>";
+		};
+		C2D75A121B55E9A10013973D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2D75A131B55E9A10013973D /* Info.plist */,
+				C2D75A141B55E9A10013973D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C2D75A2B1B55E9A10013973D /* 二维码模块Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C2D75A2E1B55E9A10013973D /* _____Tests.m */,
+				C2D75A2C1B55E9A10013973D /* Supporting Files */,
+			);
+			path = "二维码模块Tests";
+			sourceTree = "<group>";
+		};
+		C2D75A2C1B55E9A10013973D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2D75A2D1B55E9A10013973D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C2D75A3E1B55E9E50013973D /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				C2D75A3F1B55E9E50013973D /* zbar */,
+				C2D75A491B55E9E50013973D /* zbar.h */,
+				C2D75A4A1B55E9E50013973D /* ZBarCameraSimulator.h */,
+				C2D75A4B1B55E9E50013973D /* ZBarCaptureReader.h */,
+				C2D75A4C1B55E9E50013973D /* ZBarHelpController.h */,
+				C2D75A4D1B55E9E50013973D /* ZBarImage.h */,
+				C2D75A4E1B55E9E50013973D /* ZBarImageScanner.h */,
+				C2D75A4F1B55E9E50013973D /* ZBarReaderController.h */,
+				C2D75A501B55E9E50013973D /* ZBarReaderView.h */,
+				C2D75A511B55E9E50013973D /* ZBarReaderViewController.h */,
+				C2D75A521B55E9E50013973D /* zbarSDK.a */,
+				C2D75A531B55E9E50013973D /* ZBarSDK.h */,
+				C2D75A541B55E9E50013973D /* ZBarSymbol.h */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		C2D75A3F1B55E9E50013973D /* zbar */ = {
+			isa = PBXGroup;
+			children = (
+				C2D75A401B55E9E50013973D /* Decoder.h */,
+				C2D75A411B55E9E50013973D /* Exception.h */,
+				C2D75A421B55E9E50013973D /* Image.h */,
+				C2D75A431B55E9E50013973D /* ImageScanner.h */,
+				C2D75A441B55E9E50013973D /* Processor.h */,
+				C2D75A451B55E9E50013973D /* Scanner.h */,
+				C2D75A461B55E9E50013973D /* Symbol.h */,
+				C2D75A471B55E9E50013973D /* Video.h */,
+				C2D75A481B55E9E50013973D /* Window.h */,
+			);
+			path = zbar;
+			sourceTree = "<group>";
+		};
+		C2D75A561B55E9E90013973D /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				C2D75A3C1B55E9D30013973D /* AVFoundation.framework */,
+				C2D75A3A1B55E9C90013973D /* CoreMedia.framework */,
+				C2D75A381B55E9C00013973D /* libiconv.dylib */,
+			);
+			name = Framework;
+			path = "二维码模块Tests";
+			sourceTree = "<group>";
+		};
+		C2D75A581B55EA340013973D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C2D75A161B55E9A10013973D /* AppDelegate.h */,
+				C2D75A171B55E9A10013973D /* AppDelegate.m */,
+				C2D75A1C1B55E9A10013973D /* Main.storyboard */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		C2D75A591B55EA560013973D /* LXQrcodeScanView */ = {
+			isa = PBXGroup;
+			children = (
+				C2DAE97A1B5910B00093F566 /* MJRefresh */,
+				C2D75A5A1B55EAA10013973D /* LXQrcodeScanViewController.h */,
+				C2D75A5B1B55EAA10013973D /* LXQrcodeScanViewController.m */,
+				C2D75A5D1B55EAC70013973D /* LXQrcodeScanShowController.h */,
+				C2D75A5E1B55EAC70013973D /* LXQrcodeScanShowController.m */,
+				C2855E2A1B5786EE007AAF35 /* LXWebViewController.h */,
+				C2855E2B1B5786EE007AAF35 /* LXWebViewController.m */,
+			);
+			name = LXQrcodeScanView;
+			sourceTree = "<group>";
+		};
+		C2DAE97A1B5910B00093F566 /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				C2DAE97B1B5910B00093F566 /* Base */,
+				C2DAE9861B5910B00093F566 /* Custom */,
+				C2DAE99D1B5910B10093F566 /* MJRefresh.bundle */,
+				C2DAE99E1B5910B10093F566 /* MJRefresh.h */,
+				C2DAE99F1B5910B10093F566 /* MJRefreshConst.h */,
+				C2DAE9A01B5910B10093F566 /* MJRefreshConst.m */,
+				C2DAE9A11B5910B10093F566 /* UIScrollView+MJExtension.h */,
+				C2DAE9A21B5910B10093F566 /* UIScrollView+MJExtension.m */,
+				C2DAE9A31B5910B10093F566 /* UIScrollView+MJRefresh.h */,
+				C2DAE9A41B5910B10093F566 /* UIScrollView+MJRefresh.m */,
+				C2DAE9A51B5910B10093F566 /* UIView+MJExtension.h */,
+				C2DAE9A61B5910B10093F566 /* UIView+MJExtension.m */,
+			);
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		C2DAE97B1B5910B00093F566 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C2DAE97C1B5910B00093F566 /* MJRefreshAutoFooter.h */,
+				C2DAE97D1B5910B00093F566 /* MJRefreshAutoFooter.m */,
+				C2DAE97E1B5910B00093F566 /* MJRefreshBackFooter.h */,
+				C2DAE97F1B5910B00093F566 /* MJRefreshBackFooter.m */,
+				C2DAE9801B5910B00093F566 /* MJRefreshComponent.h */,
+				C2DAE9811B5910B00093F566 /* MJRefreshComponent.m */,
+				C2DAE9821B5910B00093F566 /* MJRefreshFooter.h */,
+				C2DAE9831B5910B00093F566 /* MJRefreshFooter.m */,
+				C2DAE9841B5910B00093F566 /* MJRefreshHeader.h */,
+				C2DAE9851B5910B00093F566 /* MJRefreshHeader.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C2DAE9861B5910B00093F566 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				C2DAE9871B5910B00093F566 /* Footer */,
+				C2DAE9961B5910B10093F566 /* Header */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		C2DAE9871B5910B00093F566 /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				C2DAE9881B5910B00093F566 /* Auto */,
+				C2DAE98F1B5910B10093F566 /* Back */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		C2DAE9881B5910B00093F566 /* Auto */ = {
+			isa = PBXGroup;
+			children = (
+				C2DAE9891B5910B00093F566 /* MJRefreshAutoGifFooter.h */,
+				C2DAE98A1B5910B00093F566 /* MJRefreshAutoGifFooter.m */,
+				C2DAE98B1B5910B00093F566 /* MJRefreshAutoNormalFooter.h */,
+				C2DAE98C1B5910B00093F566 /* MJRefreshAutoNormalFooter.m */,
+				C2DAE98D1B5910B00093F566 /* MJRefreshAutoStateFooter.h */,
+				C2DAE98E1B5910B10093F566 /* MJRefreshAutoStateFooter.m */,
+			);
+			path = Auto;
+			sourceTree = "<group>";
+		};
+		C2DAE98F1B5910B10093F566 /* Back */ = {
+			isa = PBXGroup;
+			children = (
+				C2DAE9901B5910B10093F566 /* MJRefreshBackGifFooter.h */,
+				C2DAE9911B5910B10093F566 /* MJRefreshBackGifFooter.m */,
+				C2DAE9921B5910B10093F566 /* MJRefreshBackNormalFooter.h */,
+				C2DAE9931B5910B10093F566 /* MJRefreshBackNormalFooter.m */,
+				C2DAE9941B5910B10093F566 /* MJRefreshBackStateFooter.h */,
+				C2DAE9951B5910B10093F566 /* MJRefreshBackStateFooter.m */,
+			);
+			path = Back;
+			sourceTree = "<group>";
+		};
+		C2DAE9961B5910B10093F566 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				C2DAE9971B5910B10093F566 /* MJRefreshGifHeader.h */,
+				C2DAE9981B5910B10093F566 /* MJRefreshGifHeader.m */,
+				C2DAE9991B5910B10093F566 /* MJRefreshNormalHeader.h */,
+				C2DAE99A1B5910B10093F566 /* MJRefreshNormalHeader.m */,
+				C2DAE99B1B5910B10093F566 /* MJRefreshStateHeader.h */,
+				C2DAE99C1B5910B10093F566 /* MJRefreshStateHeader.m */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2D75A0E1B55E9A00013973D /* 二维码模块 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2D75A321B55E9A10013973D /* Build configuration list for PBXNativeTarget "二维码模块" */;
+			buildPhases = (
+				C2D75A0B1B55E9A00013973D /* Sources */,
+				C2D75A0C1B55E9A00013973D /* Frameworks */,
+				C2D75A0D1B55E9A00013973D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "二维码模块";
+			productName = "二维码模块";
+			productReference = C2D75A0F1B55E9A00013973D /* 二维码模块.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2D75A271B55E9A10013973D /* 二维码模块Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2D75A351B55E9A10013973D /* Build configuration list for PBXNativeTarget "二维码模块Tests" */;
+			buildPhases = (
+				C2D75A241B55E9A10013973D /* Sources */,
+				C2D75A251B55E9A10013973D /* Frameworks */,
+				C2D75A261B55E9A10013973D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2D75A2A1B55E9A10013973D /* PBXTargetDependency */,
+			);
+			name = "二维码模块Tests";
+			productName = "二维码模块Tests";
+			productReference = C2D75A281B55E9A10013973D /* 二维码模块Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2D75A071B55E9A00013973D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "崇庆旭";
+				TargetAttributes = {
+					C2D75A0E1B55E9A00013973D = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 5G97LTLJUY;
+					};
+					C2D75A271B55E9A10013973D = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = C2D75A0E1B55E9A00013973D;
+					};
+				};
+			};
+			buildConfigurationList = C2D75A0A1B55E9A00013973D /* Build configuration list for PBXProject "二维码模块" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2D75A061B55E9A00013973D;
+			productRefGroup = C2D75A101B55E9A00013973D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2D75A0E1B55E9A00013973D /* 二维码模块 */,
+				C2D75A271B55E9A10013973D /* 二维码模块Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2D75A0D1B55E9A00013973D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D75A1E1B55E9A10013973D /* Main.storyboard in Resources */,
+				C2D75A231B55E9A10013973D /* LaunchScreen.xib in Resources */,
+				C2DAE9B51B5910B10093F566 /* MJRefresh.bundle in Resources */,
+				C2D75A201B55E9A10013973D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2D75A261B55E9A10013973D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2D75A0B1B55E9A00013973D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2DAE9B31B5910B10093F566 /* MJRefreshNormalHeader.m in Sources */,
+				C2DAE9B41B5910B10093F566 /* MJRefreshStateHeader.m in Sources */,
+				C2DAE9B21B5910B10093F566 /* MJRefreshGifHeader.m in Sources */,
+				C2DAE9B91B5910B10093F566 /* UIView+MJExtension.m in Sources */,
+				C2DAE9B01B5910B10093F566 /* MJRefreshBackNormalFooter.m in Sources */,
+				C2DAE9B61B5910B10093F566 /* MJRefreshConst.m in Sources */,
+				C2DAE9A91B5910B10093F566 /* MJRefreshComponent.m in Sources */,
+				C2DAE9AC1B5910B10093F566 /* MJRefreshAutoGifFooter.m in Sources */,
+				C2DAE9A81B5910B10093F566 /* MJRefreshBackFooter.m in Sources */,
+				C2D75A181B55E9A10013973D /* AppDelegate.m in Sources */,
+				C2DAE9B71B5910B10093F566 /* UIScrollView+MJExtension.m in Sources */,
+				C2D75A151B55E9A10013973D /* main.m in Sources */,
+				C2DAE9AD1B5910B10093F566 /* MJRefreshAutoNormalFooter.m in Sources */,
+				C2DAE9B81B5910B10093F566 /* UIScrollView+MJRefresh.m in Sources */,
+				C2855E2C1B5786EE007AAF35 /* LXWebViewController.m in Sources */,
+				C2DAE9AF1B5910B10093F566 /* MJRefreshBackGifFooter.m in Sources */,
+				C2DAE9AB1B5910B10093F566 /* MJRefreshHeader.m in Sources */,
+				C2DAE9AE1B5910B10093F566 /* MJRefreshAutoStateFooter.m in Sources */,
+				C2DAE9AA1B5910B10093F566 /* MJRefreshFooter.m in Sources */,
+				C2DAE9B11B5910B10093F566 /* MJRefreshBackStateFooter.m in Sources */,
+				C2D75A5C1B55EAA10013973D /* LXQrcodeScanViewController.m in Sources */,
+				C2DAE9A71B5910B10093F566 /* MJRefreshAutoFooter.m in Sources */,
+				C2D75A5F1B55EAC70013973D /* LXQrcodeScanShowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2D75A241B55E9A10013973D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D75A2F1B55E9A10013973D /* _____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2D75A2A1B55E9A10013973D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2D75A0E1B55E9A00013973D /* 二维码模块 */;
+			targetProxy = C2D75A291B55E9A10013973D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C2D75A1C1B55E9A10013973D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2D75A1D1B55E9A10013973D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C2D75A211B55E9A10013973D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2D75A221B55E9A10013973D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2D75A301B55E9A10013973D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C2D75A311B55E9A10013973D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2D75A331B55E9A10013973D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "二维码模块/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/二维码模块/ZBarSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		C2D75A341B55E9A10013973D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "二维码模块/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/二维码模块/ZBarSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		C2D75A361B55E9A10013973D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "二维码模块Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/二维码模块.app/二维码模块";
+			};
+			name = Debug;
+		};
+		C2D75A371B55E9A10013973D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "二维码模块Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/二维码模块.app/二维码模块";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2D75A0A1B55E9A00013973D /* Build configuration list for PBXProject "二维码模块" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D75A301B55E9A10013973D /* Debug */,
+				C2D75A311B55E9A10013973D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2D75A321B55E9A10013973D /* Build configuration list for PBXNativeTarget "二维码模块" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D75A331B55E9A10013973D /* Debug */,
+				C2D75A341B55E9A10013973D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2D75A351B55E9A10013973D /* Build configuration list for PBXNativeTarget "二维码模块Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D75A361B55E9A10013973D /* Debug */,
+				C2D75A371B55E9A10013973D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2D75A071B55E9A00013973D /* Project object */;
+}
